@@ -54,6 +54,8 @@ In SimplyAES, a secure-random initialisation vector is generated for each encryp
 this means that two identical strings encrypted with the same key will have substantially different representations, making it harder for an attacker to correlate encrypted data.
 Because the IV does not need to be kept [secret][iv-requirements], SimplyAES emits the iv+ciphertext as a single byte string.
 
+[iv-requirements]: http://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Initialization_vector_.28IV.29
+
 ~~~
 +-------- 16-byte IV ----------++--- unbounded payload size --->
 |                              ||
