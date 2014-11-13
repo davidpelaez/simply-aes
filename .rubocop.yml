@@ -1,0 +1,11 @@
+Style/Encoding:
+  Exclude:
+    - spec/simply-aes/format_spec.rb
+    - spec/simply-aes/cipher_spec.rb
+Style/FileName:
+  Exclude:
+    - lib/simply-aes.rb
+Metrics/CyclomaticComplexity:
+  Severity: warning
+Metrics/AbcSize:
+  Enabled: false

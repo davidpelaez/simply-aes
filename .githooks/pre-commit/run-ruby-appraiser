@@ -1,0 +1,23 @@
+#!/bin/bash
+if [ "$1" == '--about' ]; then
+  echo 'Validates staged changes with ruby-appraiser'
+  exit 0
+fi
+
+echo -e "\033[0;36mRuby Appraiser: running\033[0m"
+bundle exec ruby-appraiser rubocop --mode=staged
+result_code=$?
+if [ $result_code -gt "0" ]; then
+  echo -en "\033[0;31m" # RED
+  echo "[✘] Ruby Appraiser found newly-created defects and "
+  echo "    has blocked your commit."
+  echo "    Fix the defects and commit again."
+  echo "    To bypass, commit again with --no-verify."
+  echo -en "\033[0m" # RESET
+  exit $result_code
+else
+  echo -en "\033[0;32m" # GREEN
+  echo "[✔] Ruby Appraiser ok"
+  echo -en "\033[0m" #RESET
+fi
+exit

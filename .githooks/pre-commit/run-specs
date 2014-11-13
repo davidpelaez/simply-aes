@@ -1,0 +1,21 @@
+#!/bin/bash
+if [ "$1" == '--about' ]; then
+  echo 'Runs project specs'
+  exit 0
+fi
+
+echo -e "\033[0;36mPre-commit hook: running specs...\033[0m"
+bundle exec rake spec
+result_code=$?
+if [ $result_code -gt "0" ]; then
+  echo -en "\033[0;31m" # RED
+  echo "[✘] Specs have failed and blocked your commit."
+  echo "    Fix the defects and try again."
+  echo "    To bypass, commit again with --no-verify."
+  echo -en "\033[0m" # RESET
+  exit $result_code
+else
+  echo -en "\033[0;32m" # GREEN
+  echo "[✔] Specs ok"
+  echo -en "\033[0m" #RESET
+fi
