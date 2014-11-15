@@ -7,6 +7,10 @@ SimplyAES provides a simple, straight-forward interface for securely encrypting 
 
 [AES]: http://en.wikipedia.org/wiki/Advanced_Encryption_Standard
 
+[![Build Status](https://travis-ci.org/simplymeasured/simply-aes.svg?branch=develop)](https://travis-ci.org/simplymeasured/simply-aes)
+[![Inline docs](http://inch-ci.org/github/simplymeasured/simply-aes.svg?branch=develop)](http://inch-ci.org/github/simplymeasured/simply-aes)
+[![Gem Version](https://badge.fury.io/rb/simply-aes.svg)](http://badge.fury.io/rb/simply-aes)
+
 Installation
 ------------
 
