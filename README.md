@@ -8,6 +8,8 @@ SimplyAES provides a simple, straight-forward interface for securely encrypting 
 [AES]: http://en.wikipedia.org/wiki/Advanced_Encryption_Standard
 
 [![Build Status](https://travis-ci.org/simplymeasured/simply-aes.svg?branch=develop)](https://travis-ci.org/simplymeasured/simply-aes)
+[![Dependencies](http://img.shields.io/gemnasium/simplymeasured/simply-aes.svg)](https://gemnasium.com/simplymeasured/simply-aes)
+[![License](http://img.shields.io/:license-apache_2-green.svg)](LICENSE.md)
 [![Inline docs](http://inch-ci.org/github/simplymeasured/simply-aes.svg?branch=develop)](http://inch-ci.org/github/simplymeasured/simply-aes)
 [![Gem Version](https://badge.fury.io/rb/simply-aes.svg)](http://badge.fury.io/rb/simply-aes)
 
